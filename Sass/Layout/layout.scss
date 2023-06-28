@@ -1,0 +1,93 @@
+@import 'responsive-layout';
+body{
+   margin: 0px;
+}
+
+ .header-flexbox{
+   background-color:#6EB9FC ; 
+   padding: #6EB9FC  5px;
+   border:#6EB9FC solid 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   @include mediano2{
+      width: 900px;
+   }
+   @include mediano{
+      width: 768px;
+   }
+   @include pequeño{
+      width: 370px;
+   }
+
+   h3{
+      color: #fffafa;
+   }
+   .Letra{
+      color: #fff;
+      margin: 5px;
+      font-size: x-large;
+      @include mediano{
+         font-size: medium;
+      }
+      @include pequeño{
+         font-size: small;
+      }
+
+   }
+
+   .menu-headar-inicio{
+      margin-top: 15px;
+   }
+ }
+
+.footer-flexbox{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: #6EB9FC;
+   padding: #6EB9FC  5px;
+   @include mediano2{
+      width: 900px;
+   }
+   @include mediano{
+      width: 770px;
+   }
+   @include pequeño{
+      width: 385px;
+   }
+   }
+   .box{
+      margin-top: 20px;
+      }
+      a{
+         font-size: small;
+         margin-top: 5px;
+         color: #fff;
+         @include mediano{
+            font-size: x-small;
+         }
+         @include pequeño(){
+            font-size: xx-small;
+         }
+      }
+   h4{
+      color: #fff;
+   }
+   .contacto{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         margin-top: 20px;
+         a{
+            font-size: small;
+            margin: 5px;
+            color: #fff;
+            @include mediano{
+               font-size: x-small;
+            }
+            @include pequeño{
+               font-size: xx-small;
+            }
+         }
+   }

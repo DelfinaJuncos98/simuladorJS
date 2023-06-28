@@ -1,0 +1,26 @@
+@mixin grande{
+    @media only screen and (min-width: 1024px){
+       @content;
+    }
+ }
+ @mixin mediano3{
+   @media only screen and (min-width: 900px) and (max-width: 1024px){
+      @content;
+   }
+}
+@mixin mediano2{
+   @media only screen and (min-width: 768px) and (max-width: 900px){
+      @content;
+   }
+}
+ @mixin mediano1{
+    @media only screen and (min-width: 375px) and (max-width: 768px){
+       @content;
+    }
+ }
+
+ @mixin pequeño{
+    @media only screen and (max-width: 375px){
+       @content;
+    }
+ }

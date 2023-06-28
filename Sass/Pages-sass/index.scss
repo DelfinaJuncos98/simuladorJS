@@ -1,0 +1,158 @@
+@import 'responsive-index';
+$color-blanco: #fff;
+$color-celeste: #B0DAFF;
+.banner {
+   background-color: $color-celeste;
+   padding: 20px 5px;
+   text-align: center;
+   @include mediano2{
+      width: 900px;
+   }
+   @include mediano1{
+      width: 768px;
+   }
+   @include pequeño{
+      width: 375px;
+   }
+
+ }
+ 
+ .banner__title {
+   font-size: 24px;
+   color: $color-blanco;
+   margin-bottom: 10px;
+ }
+ 
+ .banner__description {
+   font-size: 16px;
+   color: $color-blanco;
+   margin-bottom: 20px;
+ }
+ 
+.fotos-inicio-flexbox1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .mediana{
+        width: 400px;
+        height: 400px;
+        @include mediano3{
+         width: 300px;
+         height: 300px;
+      }
+        @include mediano2{
+         width: 250px;
+         height: 250px;
+      }
+        @include mediano1{
+            width: 200px;
+            height: 200px;
+         }
+         @include pequeño{
+            width: 100px;
+            height: 100px;
+         }
+    }
+    .frases-estilo1{
+        background-color: $color-celeste;
+        box-sizing: content-box;
+        height: 180px;
+        width: 220px 220px;
+        padding: 150px 100px 0;
+        color: $color-blanco;
+
+        @include mediano2{
+         height: 150px;
+         width: 200px 200px;
+         padding: 100px 75px 0;
+      }
+        @include mediano1{
+            height: 120px;
+            width: 180px 180px;
+            padding: 80px 50px 0;
+         }
+         @include pequeño{
+            height: 30px;
+            padding: 20px 30px;
+            font-size: medium;
+            margin-top: 60px;
+         }
+    }
+}
+.fotos-inicio-flexbox2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    .frases-estilo2{
+        background-color: $color-celeste;
+        box-sizing: content-box;
+        height: 195px;
+        width: 80px ;
+        padding: 45px;
+        margin-top: 185px;
+        margin-bottom: 0px;
+        font-size: xx-large;
+        color: $color-blanco;
+        @include mediano2{
+         height: 170px;
+         width: 65px;
+         padding: 30px;
+         font-size: x-large;
+      }
+        @include mediano1(){
+            height: 150px;
+            width: 50px ;
+            padding: 20px;
+            font-size: large;
+         }
+         @include pequeño{
+            height: 70px;
+            width: 20px ;
+            padding: 15px;
+            font-size: x-small;
+            margin-top: 100px;
+         }
+    }
+    .frases-estilo3{
+        background-color: $color-celeste;
+        box-sizing: content-box;
+        height: 130px;
+        width: 120px;
+        padding: 140px 130px 100px 100px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-size: xx-large;
+        color: $color-blanco;
+        @include mediano2{
+         height: 100px;
+         width: 90px;
+         padding: 90px 100px 80px 75px;
+         font-size: x-large;
+      }
+        @include mediano1{
+            height: 70px;
+            width: 50px;
+            padding: 60px 80px 40px 50px;
+            font-size: large;
+         }
+         @include pequeño{
+            height: 70px;
+            width: 60px;
+            padding: 40px 30px 5px;
+            font-size: small;
+         }
+    }
+    .grande{
+        width: 500px;
+        height: 470px;
+        @include mediano1{
+            width: 300px;
+            height: 270px;
+         }
+         @include pequeño{
+            width: 140px;
+            height: 120px;
+            margin-top: 30px;
+         }
+    }
+}

@@ -1,0 +1,79 @@
+@import 'responsive-login';
+%ubicacion{
+    margin-bottom: 20px;
+}
+%display-flex{
+    display: flex;
+    flex-direction: column;
+}
+.box-login{
+    @include mediano{
+        width: 750px;
+        height: 600px;
+     }
+     @include pequeño{
+        width: 350px;
+        height: 400px;
+     }
+    .login{
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        margin: 75px;
+        @include mediano{
+            margin: 70px;
+         }
+         @include pequeño{
+            margin: 30px;
+         }
+    }
+    .ubicaion-login-form1{
+        @extend %display-flex;
+        align-items: center;
+        margin: 20px;
+        @include mediano{
+            display: flex
+         }
+         @include pequeño{
+            display: flex;
+         }
+
+        .letra-form1{
+            font-size: x-large;
+            color: black;
+            @extend %ubicacion;
+            @include mediano{
+                font-size: large; 
+             }
+             @include pequeño{
+                font-size: medium; 
+             }
+        
+        }
+        .espacio-input{
+            @extend %ubicacion;
+        }
+        
+    }
+    .ubicaion-login-form1{
+        @extend %display-flex;
+        align-items: center;
+        margin: 20px;
+        .ubicacion-boton{
+            margin: 40px;
+        }
+    }
+.espacio1{
+    @include mediano{
+        margin-bottom: 350px;
+     }
+    .tamaño-texto-login1{
+        @extend %display-flex;
+        font-size: medium;
+        align-items: center;
+        margin: 10px;
+        color: black;
+        }
+}
+   
+}
