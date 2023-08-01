@@ -9,12 +9,49 @@ function persona (nombre1, apellido1, correo1, usuario1, contra1){
 const ClientePreArmado = new persona("John", "doe", "johndoe@gmail.com", "johndoe1", "contraseña")
 const ClientePreArmado1 = new persona("Lucy", "doe", "lucydoe@gmail.com", "lucydoe1", "contraseña")
 const ClientePreArmado2 = new persona("Lucas", "doe", "lucasoe@gmail.com", "lucasdoe1", "contraseña")
-const listaClientes= []
+const listaClientesUsuarios= [ClientePreArmado.usuario, ClientePreArmado1.usuario, ClientePreArmado2.usuario]
+const listaClientesContraseñas=[ClientePreArmado.contra, ClientePreArmado1.contra, ClientePreArmado2.contra] 
 
-const ListaClientesPreArmada = [ClientePreArmado.usuario, ClientePreArmado1.usuario, ClientePreArmado2.usuario, ClientePreArmado.contra, ClientePreArmado1.contra, ClientePreArmado2.contra]
-
+let nombreNuevo = document.getElementById("nombre-nuevo")
+let apellidoNuevo = document.getElementById("apellido-nuevo")
+let usuarioNuevo = document.getElementById("usuario-nuevo")
+let contraseñaNuevo = document.getElementById("contraseña-nuevo")
+let contraseña2Nuevo = document.getElementById("contraseña2-nuevo")
+let correoNuevo = document.getElementById("correo-nuevo")
+let usuario = document.getElementById("usuario")
+let contraseña = document.getElementById("contraseña")
+let boton = document.getElementById("boton")
+let boton2 = document.getElementById("botonCrearUsuario")
+let usuario2 ;
 function login() {
-    alert("Bienvenido Happy Kids!")
+    boton.onclick = () =>{
+        console.log("funciono")
+        console.log(listaClientesUsuarios)
+        console.log(usuario2)
+            if (usuario.value in listaClientesUsuarios )
+                console.log(usuario.value)
+                
+            else
+                alert("Usuario o contraseña ingresada incorrecta")
+        }
+
+boton2.onclick = () =>{
+     usuario2 = usuarioNuevo.value
+    listaClientesUsuarios.push(usuario2)
+    console.log(listaClientesUsuarios)
+    console.log(usuarioNuevo.value)
+    listaClientesContraseñas.push(contraseñaNuevo.value)
+
+    }   
+
+
+
+   
+}
+
+
+  
+    /**alert("Bienvenido Happy Kids!")
     let cliente = prompt("Es usted cliente de Happy Kids ? \nEn caso de ser cliente ingrese SI de lo contrario ingrese NO");
     while (cliente != "si" && cliente != "no"){
         cliente = prompt("Por favor ingrese una resuesta valida. \nEs usted cliente de Happy Kids? \n En caso de ser cliente ingrese SI de lo contrario ingrese NO");
@@ -99,9 +136,9 @@ function login() {
             contraPreArmada = prompt("ingrese una contraseña valida")
         }
         alert("Bienvenido " + usuarioPreArmado + "!")
-    }
+    }*/
 
 
     
-}
+
 login();
