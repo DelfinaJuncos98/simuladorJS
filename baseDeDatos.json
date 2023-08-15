@@ -1,0 +1,25 @@
+{ 
+    "ClientePreArmado":{
+        "nombre":"John",
+        "apellido":"doe",
+        "correo":"johndoe@gmail.com",
+        "usuario":"johndoe1",
+        "contra":"contraseña"
+    },
+    "ClientePreArmado1":{
+        "nombre":"Lucy",
+        "apellido":"doe",
+        "correo":"lucydoe@gmail.com",
+        "usuario":"lucydoe1",
+        "contra":"contraseña"
+    },
+    "ClientePreArmado2":{
+        "nombre":"Lucas",
+        "apellido":"doe",
+        "correo":"lucasdoe@gmail.com",
+        "usuario":"lucasdoe1",
+        "contra":"contraseña"
+    }
+
+}
+
